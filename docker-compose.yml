@@ -1,0 +1,9 @@
+version: '3'
+services:
+    code-server:
+        ports:
+            - '8080:8080'
+            - '8443:8443'
+        volumes:
+            - '/git/:/home/coder/project'
+        image: codercom/code-server
